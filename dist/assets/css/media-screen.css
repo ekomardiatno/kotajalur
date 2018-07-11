@@ -19,3 +19,8 @@
         .navbar .collapse ul li a.contact-menu {
           background: transparent;
           border: 0; } }
+@media (max-width: 359px) {
+  .fiturFs-wrap .fiturFs {
+    margin: 0;
+    margin-bottom: 15px;
+    width: 100%; } }
