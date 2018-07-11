@@ -1,0 +1,89 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.15; }
+
+a:hover, a:focus {
+  text-decoration: none; }
+
+.navbar {
+  border: 0;
+  border-radius: 0; }
+  .navbar .navbar-toggle {
+    border: 0;
+    color: #fff;
+    padding: 5px;
+    font-size: 20px; }
+    .navbar .navbar-toggle:hover, .navbar .navbar-toggle:focus {
+      background: transparent;
+      color: #ff9f43; }
+  .navbar.navbar-inverse {
+    background: linear-gradient(135deg, #033, #01a3a4); }
+  .navbar .nav li a {
+    color: #fff; }
+    .navbar .nav li a.contact-menu {
+      background: rgba(0, 0, 0, 0.2);
+      border-right: 1px solid rgba(255, 255, 255, 0.3);
+      border-left: 1px solid rgba(255, 255, 255, 0.3); }
+  .navbar a.navbar-brand {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff; }
+    .navbar a.navbar-brand::before {
+      content: "";
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      background: #e76049;
+      margin-right: 10px; }
+
+.wrapper.index {
+  position: relative;
+  background: url(../images/kotajalur-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; }
+
+.fiturIn-wrap {
+  background: linear-gradient(90deg, #c35f4b, rgba(195, 95, 75, 0.75));
+  position: absolute;
+  width: 100%;
+  bottom: 30px;
+  padding: 15px; }
+  .fiturIn-wrap .fiturIn .logo-kab {
+    display: inline-block;
+    max-width: 100%;
+    width: 480px; }
+
+.disTable {
+  display: table;
+  width: 100%; }
+  .disTable .disCell-4 {
+    display: table-cell;
+    width: 33.334%;
+    vertical-align: middle; }
+
+.btnFiturIn-wrap {
+  text-align: center; }
+  .btnFiturIn-wrap .btn-fiturIn {
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 3px solid #fff;
+    margin: 10px 5px; }
+    .btnFiturIn-wrap .btn-fiturIn a {
+      position: relative;
+      display: inline-block;
+      padding: 10px 15px;
+      padding-left: 0;
+      color: #fff; }
+      .btnFiturIn-wrap .btn-fiturIn a::before {
+        font-family: "FontAwesome";
+        border-right: 3px solid #fff;
+        padding: 10px;
+        margin-right: 15px; }
+    .btnFiturIn-wrap .btn-fiturIn.facility a::before {
+      content: "\f02d"; }
+    .btnFiturIn-wrap .btn-fiturIn.agenda a::before {
+      content: "\f073"; }
