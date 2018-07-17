@@ -76,7 +76,7 @@
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                     </div>
                                     <div class="option-button">
-                                        <a class="btn location" href="#"><i class="fa fa-map-marker"></i></a>
+                                        <a class="btn location" href="#" id="showMap" data-location="0.476395,101.3784583" data-header="Universitas Riau" data-footer="Kampus Bina Widya KM 12.5, Simpang Baru, Tampan, Simpang Baru, Tampan, Kota Pekanbaru, Riau 28293"><i class="fa fa-map-marker"></i></a>
                                         <a class="btn mail" href="#"><i class="fa fa-envelope"></i></a>
                                         <a class="btn contact" href="#"><i class="fa fa-phone"></i></a>
                                         <a class="btn web" href="#"><i class="fa fa-globe"></i></a>
@@ -101,7 +101,7 @@
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                     </div>
                                     <div class="option-button">
-                                        <a class="btn location" href="#"><i class="fa fa-map-marker"></i></a>
+                                        <a class="btn location" href="#" id="showMap" data-location="0.5001613,101.415958" data-header="SKA XXI Pekanbaru" data-footer="Mall SKA Lt.5, Jalan Soekarno Hatta, Delima, Tampan, Delima, Tampan, Kota Pekanbaru, Riau 28292"><i class="fa fa-map-marker"></i></a>
                                         <a class="btn mail" href="#"><i class="fa fa-envelope"></i></a>
                                         <a class="btn contact" href="#"><i class="fa fa-phone"></i></a>
                                         <a class="btn web" href="#"><i class="fa fa-globe"></i></a>
@@ -126,7 +126,7 @@
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                     </div>
                                     <div class="option-button">
-                                        <a class="btn location" href="#"><i class="fa fa-map-marker"></i></a>
+                                        <a class="btn location" href="#" id="showMap" data-location="0.4662126,101.353083" data-header="Universitas Islam Negeri Sultan Syarif Kasim Riau" data-footer="0.4662126,101.353083"><i class="fa fa-map-marker"></i></a>
                                         <a class="btn mail" href="#"><i class="fa fa-envelope"></i></a>
                                         <a class="btn contact" href="#"><i class="fa fa-phone"></i></a>
                                         <a class="btn web" href="#"><i class="fa fa-globe"></i></a>
@@ -151,7 +151,7 @@
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                     </div>
                                     <div class="option-button">
-                                        <a class="btn location" href="#"><i class="fa fa-map-marker"></i></a>
+                                        <a class="btn location" href="#" id="showMap" data-location="0.4776249,101.3748634" data-header="Gedung Kuliah Fakultas Matematika dan Ilmu Pengetahuan Alam" data-footer="Simpang Baru, Tampan, Pekanbaru City, Riau 28293"><i class="fa fa-map-marker"></i></a>
                                         <a class="btn mail" href="#"><i class="fa fa-envelope"></i></a>
                                         <a class="btn contact" href="#"><i class="fa fa-phone"></i></a>
                                         <a class="btn web" href="#"><i class="fa fa-globe"></i></a>
@@ -186,6 +186,24 @@
                 </div>
             </div>
         </div>
+        
+        <div class="modal fade in" id="myModal-map" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel"></h4>
+                    </div>
+                    <div class="modal-body">
+                        <div id="frame-map"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <p id="myModalFooter"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         
         <div class="social-wrap">
             <ul>
