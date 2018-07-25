@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="assets/css/koma-gallery.min.css">
+        <link rel="stylesheet" href="assets/css/responsive-calendar.min.css">
         <link rel="stylesheet" href="assets/css/style.min.css">
         <link rel="stylesheet" href="assets/css/media-screen.min.css">
         <!-- JS Library -->
@@ -25,6 +26,7 @@
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
         <script src="assets/js/koma-plugins.min.js"></script>
         <script src="assets/js/scripts.min.js"></script>
+        <script src="assets/js/responsive-calendar.min.js"></script>
 
     </head>
     
@@ -64,6 +66,99 @@
                 </div>
                 <div class="disRow">
                     <div class="cell-main">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="agenda-calendar">
+                                    <div class="responsive-calendar agenda-1">
+                                        <div class="controls">
+                                            <h4><span data-head-month></span> <span data-head-year></span></h4>
+                                        </div>
+                                        <div class="day-headers">
+                                          <div class="day header">Mon</div>
+                                          <div class="day header">Tue</div>
+                                          <div class="day header">Wed</div>
+                                          <div class="day header">Thu</div>
+                                          <div class="day header">Fri</div>
+                                          <div class="day header">Sat</div>
+                                          <div class="day header">Sun</div>
+                                        </div>
+                                        <div class="days" data-group="days"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="agenda-calendar">
+                                    <div class="responsive-calendar agenda-2">
+                                        <div class="controls">
+                                            <h4><span data-head-month></span> <span data-head-year></span></h4>
+                                        </div>
+                                        <div class="day-headers">
+                                          <div class="day header">Mon</div>
+                                          <div class="day header">Tue</div>
+                                          <div class="day header">Wed</div>
+                                          <div class="day header">Thu</div>
+                                          <div class="day header">Fri</div>
+                                          <div class="day header">Sat</div>
+                                          <div class="day header">Sun</div>
+                                        </div>
+                                        <div class="days" data-group="days"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="agenda-control-wrapper">
+                                    <button class="btn btn-primary control-agenda prev"><i class="fa fa-chevron-left"></i></button>
+                                    <button class="btn btn-primary control-agenda next"><i class="fa fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                          $(document).ready(function () {
+                            var d = new Date(), m = d.getMonth(), mstr = m.toString(), m2 = '', y_old;
+                            if(mstr.length < 2){
+                              var m = '0'+mstr;
+                            }else{
+                              var m = mstr;
+                            }
+                            if(m < 12){
+                                m2 = m - 1;
+                                y_old = d.getFullYear();
+                            }else{
+                                m2 = 1;
+                                y_old = d.getFullYear() - 1;
+                            }
+                            var m2str = m2.toString();
+                            if(m2str.length < 2){
+                              var m2 = '0'+m2str;
+                            }else{
+                              var m2 = m2str;
+                            }
+                            var date = d.getFullYear()+'-'+m,
+                                date_old = y_old+'-'+m2,
+                                events_kota = {
+                                    "2018-05-30": {"number": 5, "url": "?tgl=2018-05-30"}, 
+                                    "2018-06-03": {"number": 1, "url": "?tgl=2018-06-03"}, 
+                                    "2018-06-12": {"number": 2, "url": "?tgl=2018-06-12"},
+                                    "2018-06-26": {"number": 1, "url": "?tgl=2018-06-26"},
+                                }
+                            $(".agenda-1").responsiveCalendar({
+                              time: date_old,
+                              events: events_kota
+                            });
+                            $(".agenda-2").responsiveCalendar({
+                              time: date,
+                              events: events_kota
+                            });
+                            $('.control-agenda').on('click',function(){
+                                var a = $(this);
+                                if(a.hasClass('prev')){
+                                    $('.agenda-1, .agenda-2').responsiveCalendar('prev');
+                                }else{
+                                    $('.agenda-1, .agenda-2').responsiveCalendar('next');
+                                }
+                            })
+                          });
+                        </script>
                         <div class="feed-wrap">
                             <div class="feed-post">
                                 <div class="img-feed">
