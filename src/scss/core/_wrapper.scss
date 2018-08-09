@@ -1,0 +1,53 @@
+.wrapper{
+    position: relative;
+    background: url(../images/bg-fs.png) repeat #f1f1f1;
+    &.index{
+        background: url(../images/kotajalur-bg.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: calc(100vh - 50px);
+    }
+    &.fS-wrap{
+        min-height: calc(100vh - 50px);
+        padding-bottom: 75px;
+        &::before{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 60px;
+            width: 100%;
+            background: url(../images/shape.png) repeat;
+            background-size: auto 60px;
+        }
+    }
+    &.feed{
+        min-height: 100vh;
+    }
+}
+
+.disTable{
+    display: table;
+    width: 100%;
+    .disCell-4{
+        display: table-cell;
+        width: 33.334%;
+        vertical-align: middle;
+    }
+}
+
+.disRow{
+    &::before, &::after{
+        @include clear();
+    }
+    .cell-main, .cell-side{
+        float: left;
+    }
+    .cell-side{
+        width: 300px;
+    }
+    .cell-main{
+        width: calc(100% - 300px);
+        padding-right: 15px;
+    }
+}

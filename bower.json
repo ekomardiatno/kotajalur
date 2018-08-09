@@ -1,0 +1,30 @@
+{
+  "name": "kotajalur",
+  "description": "Layanan Publik Kota",
+  "main": "index.js",
+  "authors": [
+    "Koma"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "kota",
+    "layanan",
+    "publik",
+    "taluk",
+    "kuantan"
+  ],
+  "homepage": "https://github.com/ekomardiatno/kotajalur",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.7",
+    "font-awesome": "fontawesome#~4.7.0",
+    "jquery": "~3.3.1"
+  }
+}

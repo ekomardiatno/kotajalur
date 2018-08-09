@@ -1,0 +1,81 @@
+.navbar {
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    .navbar-toggle {
+        border: 0;
+        color: #fff;
+        padding: 5px;
+        font-size: 20px;
+        &:hover, &:focus{
+            background: transparent;
+            color: $color-yellow;
+        }
+    }
+    &.navbar-inverse{
+        background: $color-header;
+        background-size: auto 50px;
+    }
+    .nav{
+        li{
+            a{
+                color: #fff;
+                &.contact-menu{
+                    background: rgba(0,0,0,.2);
+                }
+            }
+        }
+    }
+    a.navbar-brand{
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $color-white;
+        &::before{
+            content: "";
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            background: $color-red;
+            margin-right: 10px;
+        }
+    }
+}
+
+.search-here{
+    display: table;
+    form, a{
+        display: table-cell !important;
+    }
+    form{
+        input{
+            width: 0;
+            padding: 0;
+            background: rgba(255,255,255,.2);
+            border: 0;
+            color: #fff;
+            height: 50px;
+            transition: all .3s;
+            &::placeholder{
+                color: #fff;
+            }
+        }
+    }
+    &:hover input{
+        width: auto;
+        padding: 15px;
+    }
+}
+/*.form-search{
+    display: none;
+    width: 240px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    z-index: 12;
+    .input-group{
+        margin: 0;
+    }
+    .form-control, .input-group-addon{
+        border-radius: 0;
+    }
+}*/

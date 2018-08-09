@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        @@include('../inc/com-head.html', {"title": "Gallery | Kota Jalur", "description": "Layanan Publik Kota Taluk Kuantan", "keywords": "Kota, Taluk Kuantan, Pacu Jalur, Layanan Publik", "copyright": "2018. Kota Jalur. All rights reserved."})
+    </head>
+    
+    <body>
+        @@include('../inc/com-header.html')
+        <div class="wrapper feed">
+            <div class="container">
+                <div class="head-section">
+                    <div class="breadcrumbs">
+                        <a href="fasilitas.html"><i class="fa fa-home"></i></a>
+                        <a href="#">Gallery</a>
+                    </div>
+                </div>
+                <div class="disRow">
+                    <div class="cell-main">
+                        <div class="feed-wrap">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <a href="album-gallery.html"><div class="feed-gallery">
+                                        <div class="thumb-gallery">
+                                            <img koma-plugin="imageFill" ratio-x="4" ratio-y="3" src="assets/images/kotajalur-bg.jpg"/>
+                                            <div class="count-photo">4 Foto</div>
+                                        </div>
+                                        <div class="snippet-gallery">
+                                            <h4>Lorem Ipsum Dolor</h4>
+                                        </div>
+                                    </div></a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="album-gallery.html"><div class="feed-gallery">
+                                        <div class="thumb-gallery">
+                                            <img koma-plugin="imageFill" ratio-x="4" ratio-y="3" src="assets/images/kotajalur-bg-2.jpg"/>
+                                            <div class="count-photo">4 Foto</div>
+                                        </div>
+                                        <div class="snippet-gallery">
+                                            <h4>Lorem Ipsum Dolor</h4>
+                                        </div>
+                                    </div></a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="album-gallery.html"><div class="feed-gallery">
+                                        <div class="thumb-gallery">
+                                            <img koma-plugin="imageFill" ratio-x="4" ratio-y="3" src="assets/images/kotajalur-bg-3.jpg"/>
+                                            <div class="count-photo">4 Foto</div>
+                                        </div>
+                                        <div class="snippet-gallery">
+                                            <h4>Lorem Ipsum Dolor</h4>
+                                        </div>
+                                    </div></a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="album-gallery.html"><div class="feed-gallery">
+                                        <div class="thumb-gallery">
+                                            <img koma-plugin="imageFill" ratio-x="4" ratio-y="3" src="assets/images/kotajalur-bg-2.jpg"/>
+                                            <div class="count-photo">4 Foto</div>
+                                        </div>
+                                        <div class="snippet-gallery">
+                                            <h4>Lorem Ipsum Dolor</h4>
+                                        </div>
+                                    </div></a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="album-gallery.html"><div class="feed-gallery">
+                                        <div class="thumb-gallery">
+                                            <img koma-plugin="imageFill" ratio-x="4" ratio-y="3" src="assets/images/kotajalur-bg.jpg"/>
+                                            <div class="count-photo">4 Foto</div>
+                                        </div>
+                                        <div class="snippet-gallery">
+                                            <h4>Lorem Ipsum Dolor</h4>
+                                        </div>
+                                    </div></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <ul class="pagination">
+                                <li class="disabled"><a href="#"><i class="fa fa-chevron-left"></i></a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#"><i class="fa fa-chevron-right"></i></a></li>
+                            </ul> 
+                        </div>
+                    </div>
+                    
+                    <!-- SIDEBAR -->
+                    <div class="cell-side">
+                        <div class="side-content">
+                            <div class="widget"> 
+                                <div class="widget-header">
+                                    <h2>Banner</h2>
+                                </div>
+                                <div class="widget-body">
+                                    <img src="assets/images/side-content.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade in" id="myModal-map" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel"></h4>
+                    </div>
+                    <div class="modal-body">
+                        <div id="frame-map"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <p id="myModalFooter"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        @@include('../inc/com-social.html')
+        @@include('../inc/com-footer.html')
+    </body>
+</html>

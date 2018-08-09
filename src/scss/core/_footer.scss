@@ -1,0 +1,49 @@
+.footer{
+    color: $color-white;
+    background: $color-header;
+    .top-footer, .cp-footer{
+        padding: 15px 0;
+        background: rgba(0,0,0,.2);
+    }
+    .cp-footer{
+        background: rgba(0,0,0,.3);
+        text-align: right;
+    }
+    .logo-footer{
+        display: block;
+        text-align: center;
+        .img-logoFooter{
+            display: inline-block;
+            width: 100px;
+            margin-bottom: 10px;
+            img{
+                width: 100%;
+            }
+        }
+        .txt-logoFooter{
+            p {
+                font-size: 13px;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .url-footer{
+        margin: 10px 0;
+        display: block;
+        text-align: center;
+        ul{
+            display: inline-block;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+            li{
+                a{  
+                    display: inline-block;
+                    color: $color-white;
+                    padding: 5px 0;
+                }
+            }
+        }
+    }
+}

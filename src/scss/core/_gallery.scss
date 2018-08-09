@@ -1,0 +1,77 @@
+.gallery{
+    margin-left: -15px;
+    margin-right: -15px;
+    &::before, &::after{
+        @include clear();
+    }
+    .foto{
+        width: 25%;
+        float: left;
+        padding: 15px;
+        position: relative;
+        display: inline-block;
+        &::before, &::after{
+            content: "";
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            right: 30px;
+            bottom: 30px;
+            transition: opacity 0.35s, transform 0.35s;
+            z-index: 1;
+        }
+        &::before{
+            border-top: 1px solid $color-white;
+            border-bottom: 1px solid $color-white;
+            transform: scale(0,1);
+        }
+        &::after{
+            border-left: 1px solid $color-white;
+            border-right: 1px solid $color-white;
+            transform: scale(1,0);
+        }
+        &:hover::before, &:hover::after{
+            transform: scale(1);
+        }
+        .img-gallery{
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0,0,0,.3);
+                opacity: 0;
+                z-index: 1;
+                transition: opacity 0.35s;
+            }
+            &::after{
+                content: "\f00e";
+                font-family: FontAwesome;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                font-size: 30px;
+                margin-top: -15px;
+                margin-left: -15px;
+                color: $color-white;
+                z-index: 2;
+                transform: scale(0);
+                transition: transform 0.35s;
+            }
+            img{
+                width: 100%;
+            }
+        }
+        &:hover .img-gallery{
+            &::before{
+                opacity: 1;
+            }
+            &::after{
+                transform: scale(1);
+            }
+        }
+    }
+}

@@ -1,0 +1,73 @@
+.wrapper-gKoma{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.3);
+    z-index: 1000;
+    display: none;
+    .flex-gKoma{
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        align-items: center;
+        .gKoma-center{
+            position: relative;
+            width: 100%;
+            text-align: center;
+            padding: 15px;
+            .box-gKoma{
+                position: relative;
+                display: inline-block;
+                max-width: 750px;
+                text-align: center;
+                padding: 15px;
+                background: #fff;
+                box-shadow: 2px 2px 10px rgba(0,0,0,.3);
+                border-radius: 3px;
+                img{
+                    display: inline-block;
+                    max-width: 100%;
+                    box-shadow: 1px 3px 8px rgba(0,0,0,.2);
+                }
+                .nav-gKoma, .close-gKoma{
+                    position: absolute;
+                    width: 30px;
+                    height: 30px;
+                    color: #2e3c50;
+                    background: #fff;
+                    padding: 6px 0;
+                    text-align: center;
+                    font-size: 15px;
+                    border-radius: 3px;
+                    transition: all .35s;
+                    &:hover{
+                        background: #2e3c50;
+                        color: #fff;
+                    }
+                }
+                .nav-gKoma{
+                    top: 50%;
+                    margin-top: -15px;
+                    &.prev-gKoma{
+                        left: -5px;
+                        box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+                    }
+                    &.next-gKoma{
+                        right: -5px;
+                        box-shadow: -2px 2px 5px rgba(0,0,0,.2);
+                    }
+                }
+                .close-gKoma{
+                    top: -5px;
+                    right: -5px;
+                    box-shadow: -2px 2px 5px rgba(0,0,0,.2);
+                }
+            }
+        }
+    }
+}

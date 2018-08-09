@@ -1,0 +1,25 @@
+.pagination{
+    li {
+        &.disabled{
+            a{
+                color: $color-gray;
+            }
+        }
+        &.active{
+            a{
+                background: $color-red;
+                border-color: $color-red;
+                &:hover, &:focus{
+                    background: $color-red;
+                    border-color: $color-red;
+                }
+            }
+        }
+        a{
+            color: $color-red;
+            &:hover, &:focus{
+                color: $color-black-light;
+            }
+        }
+    }
+}

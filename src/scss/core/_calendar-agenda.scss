@@ -1,0 +1,72 @@
+.agenda-calendar{
+    padding: 15px;
+    background: $color-white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 10px rgba(0,0,0,.2);
+    .responsive-calendar{
+        hr{
+            margin: 10px 0;
+        }
+        .days{
+            .day{
+                padding: 5px;
+                a{
+                    border-radius: 4px;
+                    overflow: hidden;
+                    transition: all .35s ease;
+                }
+                &.active{
+                    a{
+                        background: $color-soft-blue;
+                        &:hover{
+                            background: $color-yellow;
+                        }
+                    }
+                    .badge{
+                        background: $color-red;
+                    }
+                }
+            }
+        }
+        .day-headers{
+            .day{
+                padding: 10px 0;
+                border-color: $color-gray;
+                color: $color-black-light;
+                font-weight: 500;
+            }
+        }
+    }
+    .controls {
+        padding: 10px 15px;
+        background: $color-green;
+        color: $color-white;
+        border-radius: 4px;
+        box-shadow: 1px 2px 5px rgba(0,0,0,.2);
+        margin-bottom: 5px;
+        &::before, &::after{
+            @include clear();
+        }
+        h4{
+            display: inline-block;
+            margin: 0;
+        }
+        .btn {
+            background: $color-orange;
+            border: 0;
+        }
+    }
+}
+.agenda-control-wrapper{
+    margin-bottom: 20px;
+    text-align: center;
+    .btn{
+        border: 0;
+        background: $color-yellow;
+        transition: all .35s ease;
+        &:hover{
+            background: $color-red;
+        }
+    }
+}

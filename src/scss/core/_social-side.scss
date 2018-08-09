@@ -1,0 +1,81 @@
+.social-wrap{
+    position: fixed;
+    top: 50%;
+    left: 0;
+    margin-top: -100px;
+    transition: all .3s;
+    &.viewed{
+        left: 0;
+    }
+    &::before{
+        content: "";
+        width: 40px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $color-black-light;
+    }
+    ul{
+        position: relative;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li{
+            a{
+                display: inline-block;
+                transition: all .3s;
+                span{
+                    display: inline-block;
+                    vertical-align: middle;
+                    &.fa {
+                        width: 40px;
+                        height: 40px;
+                        padding: 12px 0;
+                        font-size: 18px;
+                        text-align: center;
+                        color: $color-white;
+                    }
+                    &.txt-social{
+                        width: 0;
+                        overflow: hidden;
+                        transition: all .3s;
+                        color: $color-white;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        opacity: 0;
+                    }
+                } 
+            }
+            &:hover{
+                background: $color-red;
+                .txt-social{
+                    width: 80px;
+                    opacity: 1;
+                    padding-right: 10px;
+                }
+                .fa{
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}
+.social-view{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 50px;
+    right: 20px;
+    border-radius: 20px;
+    display: none;
+    background: $color-red;
+    color: $color-white;
+    border: 0;
+    box-shadow: 1px 2px 6px rgba(0,0,0,.3);
+    transition: all .3s;
+    &:hover, &:focus{
+        background: $color-orange;
+        color: $color-white;
+    }
+}

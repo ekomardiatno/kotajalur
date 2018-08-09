@@ -1,0 +1,64 @@
+.post-body{
+    padding: 15px;
+    background: $color-white;
+    border: 1px solid #ddd;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.1);
+    margin-bottom: 30px;
+    .title-post{
+        margin: 0;
+        margin-bottom: 15px;
+        line-height: 34px;
+        font-size: 30px;
+        padding: 0 15px;
+    }
+    .img-post, .contact-map{
+        overflow: hidden;
+        border-radius: 3px;
+        box-shadow: 1px 2px 5px rgba(0,0,0,.2);
+        margin-bottom: 15px;
+    }
+    .content-post{
+        padding: 0 15px;
+        .info-post {
+            color: $color-gray;
+            font-size: 13px;
+            padding: 0 10px;
+            span{
+                margin-right: 15px;
+            }
+            span:last-child{
+                margin-right: 0;
+            }
+        }
+        .post-main{
+            p {
+                line-height: 1.78;
+            }
+            .head-main-post{
+                margin: 15px 0;
+                position: relative;
+                text-align: center;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    margin-top: -2px;
+                    height: 4px;
+                    width: 100%;
+                    background: $color-orange;
+                    border-radius: 2px;
+                }
+                span{
+                    position: relative;
+                    padding: 0 15px;
+                    background: $color-white;
+                    color: $color-red;
+                    font-size: 20px;
+                    font-weight: 700;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+}

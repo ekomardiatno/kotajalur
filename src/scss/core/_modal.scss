@@ -1,0 +1,33 @@
+.modal{
+    #frame-map{
+        position: relative;
+        &:before{
+            content: "\f013";
+            font-family: FontAwesome;
+            font-size: 40px;
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -20px;
+            margin-left: -20px;
+            z-index: 0;
+            animation: rotate 2s infinite;
+        }
+        iframe{
+            position: relative;
+            z-index: 1;
+        }
+    }
+}
+@keyframes rotate{
+    0% {
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
